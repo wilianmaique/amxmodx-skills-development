@@ -1,0 +1,1203 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-14",
+  "source_policy": "Project compiler includes take precedence over this bundled reference snapshot. This manifest records coverage, not runtime capability.",
+  "versions": {
+    "amxmodx": "1.10.0.5487",
+    "amxmodx_changeset": "8fc12670",
+    "reapi": "5.29 (REAPI_VERSION=529359)"
+  },
+  "owners": {
+    "cs16-amxx-plugin-core": [
+      "amxmodx.inc",
+      "amxconst.inc",
+      "amxmisc.inc",
+      "amxmodx_version.inc",
+      "core.inc"
+    ],
+    "cs16-cvars-config": [
+      "cvars.inc",
+      "gameconfig.inc"
+    ],
+    "cs16-reapi-hooks": [
+      "reapi.inc",
+      "reapi_version.inc"
+    ],
+    "cs16-reapi-gameplay": [
+      "reapi_gamedll.inc",
+      "reapi_gamedll_const.inc",
+      "cssdk_const.inc"
+    ],
+    "cs16-rehlds-engine": [
+      "reapi_engine.inc",
+      "reapi_engine_const.inc"
+    ],
+    "cs16-reapi-addons": [
+      "reapi_reunion.inc",
+      "reapi_rechecker.inc",
+      "reapi_vtc.inc"
+    ],
+    "cs16-entities-ham-fakemeta": [
+      "hamsandwich.inc",
+      "ham_const.inc",
+      "engine.inc",
+      "engine_const.inc",
+      "engine_stocks.inc",
+      "fakemeta.inc",
+      "fakemeta_const.inc",
+      "fakemeta_stocks.inc",
+      "fakemeta_util.inc",
+      "hlsdk_const.inc",
+      "fun.inc"
+    ],
+    "cs16-cstrike-stats": [
+      "cstrike.inc",
+      "cstrike_const.inc",
+      "csx.inc",
+      "csstats.inc",
+      "csstats_const.inc"
+    ],
+    "cs16-messages-ui": [
+      "messages.inc",
+      "message_const.inc",
+      "message_stocks.inc",
+      "newmenus.inc",
+      "lang.inc"
+    ],
+    "cs16-data-containers": [
+      "cellarray.inc",
+      "celltrie.inc",
+      "cellstack.inc",
+      "datapack.inc",
+      "sorting.inc"
+    ],
+    "cs16-storage-sql": [
+      "file.inc",
+      "nvault.inc",
+      "vault.inc",
+      "sqlx.inc",
+      "dbi.inc"
+    ],
+    "cs16-text-parsing": [
+      "string.inc",
+      "string_const.inc",
+      "string_stocks.inc",
+      "regex.inc",
+      "json.inc",
+      "textparse_ini.inc",
+      "textparse_smc.inc"
+    ],
+    "cs16-math-time": [
+      "float.inc",
+      "vector.inc",
+      "xs.inc",
+      "time.inc"
+    ],
+    "cs16-network-geoip": [
+      "sockets.inc",
+      "geoip.inc"
+    ],
+    "goldsrc-other-mods": [
+      "dodconst.inc",
+      "dodfun.inc",
+      "dodstats.inc",
+      "dodx.inc",
+      "esf.inc",
+      "esf_const.inc",
+      "ns.inc",
+      "ns_const.inc",
+      "tfcconst.inc",
+      "tfcstats.inc",
+      "tfcx.inc",
+      "tsconst.inc",
+      "tsfun.inc",
+      "tsstats.inc",
+      "tsx.inc"
+    ]
+  },
+  "files": {
+    "amxconst.inc": {
+      "sha256": "c5e8f5bf4155a7a2b1c7060bc6cb28bba547d5e1d48c23b70268e9fdde039ee8",
+      "bytes": 16070,
+      "lines": 594,
+      "symbol_declarations": 271,
+      "kinds": {
+        "constant": 264,
+        "enum": 7
+      },
+      "dependencies": [
+        "amxmodx_version",
+        "cstrike_const"
+      ],
+      "module_pragmas": []
+    },
+    "amxmisc.inc": {
+      "sha256": "a74a1f974685691da1eeaaa1e532eae8b48a7761e4d7f53c9b57b132983ffdad",
+      "bytes": 26089,
+      "lines": 902,
+      "symbol_declarations": 30,
+      "kinds": {
+        "constant": 5,
+        "stock": 25
+      },
+      "dependencies": [
+        "amxmodx"
+      ],
+      "module_pragmas": []
+    },
+    "amxmodx.inc": {
+      "sha256": "62e8fd16d3ae8ca14ea7e273aecfe5646d39b47789c3a2a17fb1a10d6e00ec12",
+      "bytes": 124624,
+      "lines": 3447,
+      "symbol_declarations": 230,
+      "kinds": {
+        "constant": 1,
+        "forward": 22,
+        "native": 207
+      },
+      "dependencies": [
+        "core",
+        "float",
+        "amxconst",
+        "string",
+        "file",
+        "vault",
+        "lang",
+        "messages",
+        "vector",
+        "sorting",
+        "cellarray",
+        "cellstack",
+        "celltrie",
+        "datapack",
+        "newmenus",
+        "textparse_smc",
+        "textparse_ini",
+        "cvars",
+        "gameconfig",
+        "message_stocks"
+      ],
+      "module_pragmas": []
+    },
+    "amxmodx_version.inc": {
+      "sha256": "6a0056cb0dc0acb66078c062e1cdb1b9425bee3dd43ca181a6bc436cf2f3e8c0",
+      "bytes": 596,
+      "lines": 20,
+      "symbol_declarations": 13,
+      "kinds": {
+        "constant": 12,
+        "stock-variable": 1
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "cellarray.inc": {
+      "sha256": "a05c600d5f89272c95a9fdaaba8cf5e182790f167a9243d2a79365550fe06a5d",
+      "bytes": 18786,
+      "lines": 525,
+      "symbol_declarations": 32,
+      "kinds": {
+        "constant": 2,
+        "enum": 1,
+        "native": 28,
+        "stock": 1
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "cellstack.inc": {
+      "sha256": "341f98bf5ad28509ed4c8d853613c647443c8cb6a92d55170025b4289e40c280",
+      "bytes": 5611,
+      "lines": 166,
+      "symbol_declarations": 13,
+      "kinds": {
+        "constant": 2,
+        "enum": 1,
+        "native": 9,
+        "stock": 1
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "celltrie.inc": {
+      "sha256": "7668ceced46f4b9a906c1037724f03bd3d0bbfe6bf2a94bfc55d71a130d712f4",
+      "bytes": 13946,
+      "lines": 412,
+      "symbol_declarations": 33,
+      "kinds": {
+        "constant": 4,
+        "enum": 3,
+        "native": 26
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "core.inc": {
+      "sha256": "ac963113aa81c701c9c6a704400ac23fb1b8177140bb08401a3e1a2459fa5dd8",
+      "bytes": 4712,
+      "lines": 202,
+      "symbol_declarations": 19,
+      "kinds": {
+        "constant": 1,
+        "native": 17,
+        "stock": 1
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "cssdk_const.inc": {
+      "sha256": "88bfe602a7c01414436f49c8e38e6b6d82dea62fd398c4e9ba9bde94eedf3041",
+      "bytes": 51947,
+      "lines": 1590,
+      "symbol_declarations": 988,
+      "kinds": {
+        "constant": 957,
+        "enum": 30,
+        "macro": 1
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "csstats.inc": {
+      "sha256": "e714ef40da60854abe119264b0ab67dce4f7c3e2687c6674a7ddaf1487c6c0b3",
+      "bytes": 10807,
+      "lines": 298,
+      "symbol_declarations": 12,
+      "kinds": {
+        "constant": 1,
+        "native": 11
+      },
+      "dependencies": [
+        "csstats_const"
+      ],
+      "module_pragmas": []
+    },
+    "csstats_const.inc": {
+      "sha256": "880566bc2c3e33d70ba5b11de91c629250d4f71ccf59e63b076dd05a24a0906c",
+      "bytes": 674,
+      "lines": 29,
+      "symbol_declarations": 6,
+      "kinds": {
+        "constant": 6
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "cstrike.inc": {
+      "sha256": "710d45b89454d4f5818a86ea3f8c6c4aa1cfb4e3d63c79470c79ae397d747031",
+      "bytes": 45562,
+      "lines": 1287,
+      "symbol_declarations": 77,
+      "kinds": {
+        "constant": 1,
+        "forward": 3,
+        "native": 71,
+        "stock": 2
+      },
+      "dependencies": [
+        "cstrike_const"
+      ],
+      "module_pragmas": [
+        "cstrike"
+      ]
+    },
+    "cstrike_const.inc": {
+      "sha256": "b6e23f4a90af4de39ff146c919c64b086f00858432f2b2757887f2fb04296024",
+      "bytes": 14912,
+      "lines": 521,
+      "symbol_declarations": 318,
+      "kinds": {
+        "constant": 303,
+        "enum": 15
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "csx.inc": {
+      "sha256": "fc4413a3343ba5f02ee7daac5d6907e0d7a61e22bbe9a107d6beaf0c6e7f9878",
+      "bytes": 6984,
+      "lines": 259,
+      "symbol_declarations": 23,
+      "kinds": {
+        "constant": 5,
+        "enum": 1,
+        "forward": 8,
+        "native": 9
+      },
+      "dependencies": [
+        "csstats"
+      ],
+      "module_pragmas": []
+    },
+    "cvars.inc": {
+      "sha256": "14e7698bb08f4457b898d6fe117c1722a3dcdb17a53d926156ab92ed2d724e29",
+      "bytes": 19712,
+      "lines": 547,
+      "symbol_declarations": 49,
+      "kinds": {
+        "constant": 14,
+        "enum": 1,
+        "native": 34
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "datapack.inc": {
+      "sha256": "f09770ba55f18c0c0977b9a87664c061f710d06f77a503007eca5c04a3f3b934",
+      "bytes": 4740,
+      "lines": 161,
+      "symbol_declarations": 15,
+      "kinds": {
+        "constant": 2,
+        "enum": 1,
+        "native": 12
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "dbi.inc": {
+      "sha256": "d5bd67a0bb7015e502633e12c2b5945d7c354efcb213544e29f7ae4344e0842f",
+      "bytes": 4266,
+      "lines": 154,
+      "symbol_declarations": 22,
+      "kinds": {
+        "constant": 6,
+        "enum": 2,
+        "native": 13,
+        "stock": 1
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "dodconst.inc": {
+      "sha256": "39766cf2326e6ffe97eeb30d066e0cef15395cda712f234ac1f788bd5863d674",
+      "bytes": 2830,
+      "lines": 152,
+      "symbol_declarations": 106,
+      "kinds": {
+        "constant": 106
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "dodfun.inc": {
+      "sha256": "99b086ad0c6c77fde30cd8d4426a94b378ce1a4a6f0f5892ea33ca41dc8ed8ed",
+      "bytes": 4062,
+      "lines": 152,
+      "symbol_declarations": 61,
+      "kinds": {
+        "constant": 34,
+        "enum": 2,
+        "forward": 3,
+        "native": 22
+      },
+      "dependencies": [
+        "dodconst"
+      ],
+      "module_pragmas": [
+        "dodfun"
+      ]
+    },
+    "dodstats.inc": {
+      "sha256": "6b1daf6de75e8916686a4f513df2529a5625006b6e5ec3aba29f5e123a269a79",
+      "bytes": 2755,
+      "lines": 69,
+      "symbol_declarations": 12,
+      "kinds": {
+        "constant": 1,
+        "native": 11
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "dodx.inc": {
+      "sha256": "18ab7df00de6e10515e99d157910f21e1c97d3caca4e323accab4ad21291638e",
+      "bytes": 4880,
+      "lines": 161,
+      "symbol_declarations": 42,
+      "kinds": {
+        "constant": 4,
+        "forward": 14,
+        "native": 24
+      },
+      "dependencies": [
+        "dodconst",
+        "dodstats"
+      ],
+      "module_pragmas": []
+    },
+    "engine.inc": {
+      "sha256": "a4db7e409365872a9580fd09c4570cd11f3558952357b81f59d40b1dbdedbe80",
+      "bytes": 47643,
+      "lines": 1343,
+      "symbol_declarations": 84,
+      "kinds": {
+        "constant": 1,
+        "forward": 11,
+        "native": 72
+      },
+      "dependencies": [
+        "engine_const",
+        "engine_stocks"
+      ],
+      "module_pragmas": [
+        "engine"
+      ]
+    },
+    "engine_const.inc": {
+      "sha256": "15ac17fad6be1f21f5991c0fd3474f22c59ff9213a974406c08059388d56dc20",
+      "bytes": 6002,
+      "lines": 310,
+      "symbol_declarations": 196,
+      "kinds": {
+        "constant": 196
+      },
+      "dependencies": [
+        "hlsdk_const"
+      ],
+      "module_pragmas": []
+    },
+    "engine_stocks.inc": {
+      "sha256": "72ce52d9664d9b86f6a17bc3df2f77158c88a3363b28835993ce2982ab4be258",
+      "bytes": 6227,
+      "lines": 248,
+      "symbol_declarations": 23,
+      "kinds": {
+        "constant": 1,
+        "stock": 22
+      },
+      "dependencies": [
+        "amxmodx",
+        "engine"
+      ],
+      "module_pragmas": []
+    },
+    "esf.inc": {
+      "sha256": "7c1eef7831315682b7affc2457d7c1429947c270f17865c79488163117f03ae3",
+      "bytes": 2127,
+      "lines": 70,
+      "symbol_declarations": 41,
+      "kinds": {
+        "constant": 1,
+        "native": 40
+      },
+      "dependencies": [],
+      "module_pragmas": [
+        "EvolutionXCore"
+      ]
+    },
+    "esf_const.inc": {
+      "sha256": "e229a0c0f11c59a8fdec78a61b006234311e5c8d14cc4cc4aa9cedb42f9ee4da",
+      "bytes": 1362,
+      "lines": 74,
+      "symbol_declarations": 40,
+      "kinds": {
+        "constant": 40
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "fakemeta.inc": {
+      "sha256": "61bed06364e0ef06f1bcf210d229b827f27c416fb250c0d52a148736c20e1a5c",
+      "bytes": 44056,
+      "lines": 1127,
+      "symbol_declarations": 78,
+      "kinds": {
+        "constant": 3,
+        "native": 74,
+        "stock": 1
+      },
+      "dependencies": [
+        "fakemeta_const"
+      ],
+      "module_pragmas": [
+        "fakemeta"
+      ]
+    },
+    "fakemeta_const.inc": {
+      "sha256": "00196dbf08e736cbd2a54660f7f809256476c10dee165ff4d9b378b0dca7cd57",
+      "bytes": 24078,
+      "lines": 793,
+      "symbol_declarations": 614,
+      "kinds": {
+        "constant": 475,
+        "enum": 8,
+        "hook": 131
+      },
+      "dependencies": [
+        "hlsdk_const"
+      ],
+      "module_pragmas": []
+    },
+    "fakemeta_stocks.inc": {
+      "sha256": "2c6dd6c9fb2c5a07ddd5fade0be6646835d74294cbd8c9fcfee3339cf71aba35",
+      "bytes": 14436,
+      "lines": 395,
+      "symbol_declarations": 116,
+      "kinds": {
+        "constant": 1,
+        "stock": 115
+      },
+      "dependencies": [
+        "fakemeta"
+      ],
+      "module_pragmas": []
+    },
+    "fakemeta_util.inc": {
+      "sha256": "2111c0381da809b643b6831117b516faa0de253f9167ad9467dc196aadb2a07d",
+      "bytes": 24712,
+      "lines": 882,
+      "symbol_declarations": 96,
+      "kinds": {
+        "constant": 4,
+        "macro": 34,
+        "stock": 58
+      },
+      "dependencies": [
+        "fakemeta",
+        "xs"
+      ],
+      "module_pragmas": []
+    },
+    "file.inc": {
+      "sha256": "89585795aa9f99181ef84fadca3937a6bfd10aeae1043c14e5de03a86f7cba14",
+      "bytes": 23592,
+      "lines": 666,
+      "symbol_declarations": 77,
+      "kinds": {
+        "constant": 31,
+        "enum": 2,
+        "native": 44
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "float.inc": {
+      "sha256": "569865729f8c0f8df48e58623c3860379214c1c2c539e330567bbded5f634675",
+      "bytes": 11977,
+      "lines": 422,
+      "symbol_declarations": 69,
+      "kinds": {
+        "constant": 8,
+        "enum": 2,
+        "forward": 3,
+        "native": 27,
+        "stock": 29
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "fun.inc": {
+      "sha256": "2b6019e54ac15e4674c0062286568afefa406f79ce442f9412b640ae2450b722",
+      "bytes": 10396,
+      "lines": 333,
+      "symbol_declarations": 24,
+      "kinds": {
+        "constant": 1,
+        "native": 23
+      },
+      "dependencies": [],
+      "module_pragmas": [
+        "fun"
+      ]
+    },
+    "gameconfig.inc": {
+      "sha256": "fc7af8c1fee647fbe0c8e9ff4832ccccac463ab3ea0c74ff1ca01af972b2d7f1",
+      "bytes": 2790,
+      "lines": 93,
+      "symbol_declarations": 9,
+      "kinds": {
+        "constant": 2,
+        "enum": 1,
+        "native": 6
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "geoip.inc": {
+      "sha256": "f05ec07cf169632f0909b3bb713359a8b2ae8e6685f0f96ef0c9102e115b194c",
+      "bytes": 9745,
+      "lines": 264,
+      "symbol_declarations": 27,
+      "kinds": {
+        "constant": 11,
+        "enum": 1,
+        "native": 15
+      },
+      "dependencies": [],
+      "module_pragmas": [
+        "geoip"
+      ]
+    },
+    "ham_const.inc": {
+      "sha256": "778fab6090367b0b23f650a86809188a74ed99b75668af5059f8d0f61f755e4d",
+      "bytes": 133011,
+      "lines": 4352,
+      "symbol_declarations": 506,
+      "kinds": {
+        "constant": 11,
+        "enum": 3,
+        "hook": 492
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "hamsandwich.inc": {
+      "sha256": "5724d2bcec8e9e5924eb293cdae394cf3d819680e2a26b3b03139183315289c6",
+      "bytes": 14946,
+      "lines": 439,
+      "symbol_declarations": 40,
+      "kinds": {
+        "constant": 1,
+        "native": 38,
+        "stock": 1
+      },
+      "dependencies": [
+        "ham_const"
+      ],
+      "module_pragmas": [
+        "hamsandwich"
+      ]
+    },
+    "hlsdk_const.inc": {
+      "sha256": "d1687aadec6fc065f660cbd48ada48e5059332c47fb74cc18b5a1294640aaba3",
+      "bytes": 31603,
+      "lines": 808,
+      "symbol_declarations": 425,
+      "kinds": {
+        "constant": 425
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "json.inc": {
+      "sha256": "b6b2c8f35eb62aaec24023b5d91691f3543bbf64c6e87c462474252c2fe3353c",
+      "bytes": 25758,
+      "lines": 777,
+      "symbol_declarations": 77,
+      "kinds": {
+        "constant": 9,
+        "enum": 2,
+        "macro": 8,
+        "native": 58
+      },
+      "dependencies": [],
+      "module_pragmas": [
+        "json"
+      ]
+    },
+    "lang.inc": {
+      "sha256": "809be93b0179d8703d68275dcba2da72fa64a414ac38de2c3e98f0b44479eb77",
+      "bytes": 3092,
+      "lines": 119,
+      "symbol_declarations": 12,
+      "kinds": {
+        "constant": 2,
+        "enum": 1,
+        "native": 9
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "message_const.inc": {
+      "sha256": "0dc7d34c89f84bc8056f749729774c6707695d0bfbc32c1a4cd8c8f4d983afbc",
+      "bytes": 28723,
+      "lines": 1130,
+      "symbol_declarations": 174,
+      "kinds": {
+        "constant": 174
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "message_stocks.inc": {
+      "sha256": "eb5979cd4419e3403b77ab73cf3d712efa379dba038d9e5744a5491b10fff11f",
+      "bytes": 4594,
+      "lines": 161,
+      "symbol_declarations": 5,
+      "kinds": {
+        "constant": 1,
+        "stock": 4
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "messages.inc": {
+      "sha256": "0b721e89ed94e80c537ca48988b3aff3b36b2e2caffa77fa42c29e9df16055ed",
+      "bytes": 21071,
+      "lines": 604,
+      "symbol_declarations": 40,
+      "kinds": {
+        "constant": 1,
+        "native": 39
+      },
+      "dependencies": [
+        "message_const"
+      ],
+      "module_pragmas": []
+    },
+    "newmenus.inc": {
+      "sha256": "3f16685b076d95991cc8fe3fcffef671638010063da144365f8f94def52e1055",
+      "bytes": 12355,
+      "lines": 387,
+      "symbol_declarations": 39,
+      "kinds": {
+        "constant": 19,
+        "native": 20
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "ns.inc": {
+      "sha256": "a11c3363bf2c91c976ae8efe5319b08568dc8bb9f955d2f00e3a9c3e66865b16",
+      "bytes": 23252,
+      "lines": 754,
+      "symbol_declarations": 105,
+      "kinds": {
+        "constant": 1,
+        "forward": 7,
+        "native": 97
+      },
+      "dependencies": [
+        "ns_const"
+      ],
+      "module_pragmas": [
+        "ns"
+      ]
+    },
+    "ns_const.inc": {
+      "sha256": "7334720b3535391e3e75602e1396e66dc7168407cbc39e05c6d1d0d65e61925a",
+      "bytes": 4990,
+      "lines": 196,
+      "symbol_declarations": 141,
+      "kinds": {
+        "constant": 136,
+        "enum": 5
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "nvault.inc": {
+      "sha256": "511f1c61ea5e43951f5ee343b431c13bdc5ecba5c6cd7dac647a9eecc7192f8b",
+      "bytes": 5112,
+      "lines": 154,
+      "symbol_declarations": 10,
+      "kinds": {
+        "constant": 1,
+        "native": 9
+      },
+      "dependencies": [],
+      "module_pragmas": [
+        "nvault"
+      ]
+    },
+    "reapi.inc": {
+      "sha256": "b704a522cf4fef7d1d2885c453f541d40dcb11b34d40c8847a72dbe5712379f1",
+      "bytes": 7793,
+      "lines": 331,
+      "symbol_declarations": 108,
+      "kinds": {
+        "constant": 83,
+        "enum": 4,
+        "macro": 3,
+        "native": 18
+      },
+      "dependencies": [
+        "cssdk_const",
+        "reapi_version",
+        "reapi_engine",
+        "reapi_gamedll",
+        "reapi_vtc",
+        "reapi_reunion",
+        "reapi_rechecker"
+      ],
+      "module_pragmas": [
+        "reapi"
+      ]
+    },
+    "reapi_engine.inc": {
+      "sha256": "193238175a53206928d8b60d3c36c85bf82f3e09fcae1a564284cbc22a48f610",
+      "bytes": 16958,
+      "lines": 479,
+      "symbol_declarations": 46,
+      "kinds": {
+        "constant": 2,
+        "enum": 1,
+        "native": 43
+      },
+      "dependencies": [
+        "reapi_engine_const"
+      ],
+      "module_pragmas": []
+    },
+    "reapi_engine_const.inc": {
+      "sha256": "5e5350230d96823153113dfb35ffdbcfbe7065561f56396b6a6cd5f940c0332d",
+      "bytes": 41117,
+      "lines": 1538,
+      "symbol_declarations": 229,
+      "kinds": {
+        "constant": 56,
+        "enum": 13,
+        "hook": 22,
+        "member": 138
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "reapi_gamedll.inc": {
+      "sha256": "aba4fd8ffb97d040354b4a3d6e0c2f76a09e418aa4fe743775e080405568aed5",
+      "bytes": 44904,
+      "lines": 1276,
+      "symbol_declarations": 114,
+      "kinds": {
+        "constant": 1,
+        "native": 113
+      },
+      "dependencies": [
+        "reapi_gamedll_const"
+      ],
+      "module_pragmas": []
+    },
+    "reapi_gamedll_const.inc": {
+      "sha256": "94db9c8c32799e05e43c07eb92434e42db7450e6a3ff1ccc363e77fbb552ab66",
+      "bytes": 162769,
+      "lines": 6419,
+      "symbol_declarations": 888,
+      "kinds": {
+        "constant": 128,
+        "enum": 65,
+        "hook": 145,
+        "macro": 1,
+        "member": 549
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "reapi_rechecker.inc": {
+      "sha256": "5936efcaa1e80d69235ba942bd357ec60cba2ee460886a665fda84224eb8c177",
+      "bytes": 1727,
+      "lines": 58,
+      "symbol_declarations": 13,
+      "kinds": {
+        "constant": 6,
+        "enum": 2,
+        "hook": 3,
+        "native": 2
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "reapi_reunion.inc": {
+      "sha256": "0622b6a0365e33c4399dba6d90791748c6e8a6c11be61fc7794fc3de582b15d2",
+      "bytes": 1159,
+      "lines": 61,
+      "symbol_declarations": 19,
+      "kinds": {
+        "constant": 13,
+        "enum": 1,
+        "macro": 1,
+        "native": 4
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "reapi_version.inc": {
+      "sha256": "00668810544393a942391b93cf0e42c7987b2edac97743304b020f3c701780c1",
+      "bytes": 203,
+      "lines": 9,
+      "symbol_declarations": 4,
+      "kinds": {
+        "constant": 4
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "reapi_vtc.inc": {
+      "sha256": "ff03d8612961065584745004bd0ba570669ebcf4139c8ac4a58f6010739f71a3",
+      "bytes": 1370,
+      "lines": 71,
+      "symbol_declarations": 8,
+      "kinds": {
+        "constant": 1,
+        "forward": 2,
+        "native": 5
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "regex.inc": {
+      "sha256": "1bf7938f82f471fadc38797fd12f7702f7123cc9e951117463dcddf4f980a3af",
+      "bytes": 15987,
+      "lines": 348,
+      "symbol_declarations": 71,
+      "kinds": {
+        "constant": 60,
+        "enum": 1,
+        "native": 9,
+        "stock": 1
+      },
+      "dependencies": [],
+      "module_pragmas": [
+        "regex"
+      ]
+    },
+    "sockets.inc": {
+      "sha256": "ed36663d2a1c177730e8814da796e8d19c6b8350470f50a5fb23175483dc3fee",
+      "bytes": 6400,
+      "lines": 183,
+      "symbol_declarations": 17,
+      "kinds": {
+        "constant": 9,
+        "native": 8
+      },
+      "dependencies": [],
+      "module_pragmas": [
+        "sockets"
+      ]
+    },
+    "sorting.inc": {
+      "sha256": "f030547b2f9ad3eeb8319e7b990d3ca3299866d2ceeeb18994113137efce7cbb",
+      "bytes": 3249,
+      "lines": 107,
+      "symbol_declarations": 15,
+      "kinds": {
+        "constant": 7,
+        "enum": 2,
+        "native": 6
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "sqlx.inc": {
+      "sha256": "b12264ddfa4ad75c0fc2b524478d5ca57313ae08df4540558920f81b0d4338ec",
+      "bytes": 18555,
+      "lines": 582,
+      "symbol_declarations": 37,
+      "kinds": {
+        "constant": 6,
+        "enum": 1,
+        "native": 25,
+        "stock": 5
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "string.inc": {
+      "sha256": "e3c0fea7e84f7b6abcb4e669446b5476014dc5c37c9b443b5e07f6bae242ff53",
+      "bytes": 29270,
+      "lines": 786,
+      "symbol_declarations": 51,
+      "kinds": {
+        "constant": 1,
+        "native": 50
+      },
+      "dependencies": [
+        "string_const",
+        "string_stocks"
+      ],
+      "module_pragmas": []
+    },
+    "string_const.inc": {
+      "sha256": "5726ed185ce7c64946aacd9b68377061ecbefbe846152919bf1f945622e79683",
+      "bytes": 8406,
+      "lines": 156,
+      "symbol_declarations": 42,
+      "kinds": {
+        "constant": 41,
+        "macro": 1
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "string_stocks.inc": {
+      "sha256": "28798d8551c5f7f284a2b525462d2ac26e19f211b0145fd914ffcc9da13d0e70",
+      "bytes": 8310,
+      "lines": 325,
+      "symbol_declarations": 11,
+      "kinds": {
+        "constant": 1,
+        "stock": 10
+      },
+      "dependencies": [
+        "string"
+      ],
+      "module_pragmas": []
+    },
+    "textparse_ini.inc": {
+      "sha256": "6c718caeb84193f58a2d3d703bfcc4ef32a94b58248b5957eb9f2a0736987ba1",
+      "bytes": 7374,
+      "lines": 214,
+      "symbol_declarations": 10,
+      "kinds": {
+        "constant": 2,
+        "enum": 1,
+        "native": 7
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "textparse_smc.inc": {
+      "sha256": "df7d724508480e5938d9027f4e89c44e0c0a01a6b7c58a2cb850ba9d4c1697c2",
+      "bytes": 9165,
+      "lines": 261,
+      "symbol_declarations": 28,
+      "kinds": {
+        "constant": 17,
+        "enum": 3,
+        "native": 8
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "tfcconst.inc": {
+      "sha256": "7cf7194a4a26c2a83918e1a2da0fc8f4e113dfcf3a0ce97195eefee23c564188",
+      "bytes": 1690,
+      "lines": 84,
+      "symbol_declarations": 55,
+      "kinds": {
+        "constant": 55
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "tfcstats.inc": {
+      "sha256": "a96237a9f4972975695b98759b85a1edc144311319948acd9545a288214b1f08",
+      "bytes": 2470,
+      "lines": 62,
+      "symbol_declarations": 10,
+      "kinds": {
+        "constant": 1,
+        "native": 9
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "tfcx.inc": {
+      "sha256": "89cac12325bf8d384ca05faaf9c5970dfeb884a292d9c7b189e1d3088d508bd7",
+      "bytes": 4268,
+      "lines": 148,
+      "symbol_declarations": 29,
+      "kinds": {
+        "constant": 3,
+        "forward": 2,
+        "native": 23,
+        "stock": 1
+      },
+      "dependencies": [
+        "tfcconst",
+        "tfcstats"
+      ],
+      "module_pragmas": []
+    },
+    "time.inc": {
+      "sha256": "656436db38d4d35dfb6abf5b0556bd60ff06613d65224737690350628268f614",
+      "bytes": 5382,
+      "lines": 118,
+      "symbol_declarations": 15,
+      "kinds": {
+        "constant": 14,
+        "stock": 1
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "tsconst.inc": {
+      "sha256": "1297f1e2edc5a03d3d338ffc97aa72a05695b022f7bbdfde854b12b9a1c18f49",
+      "bytes": 2729,
+      "lines": 154,
+      "symbol_declarations": 75,
+      "kinds": {
+        "constant": 75
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "tsfun.inc": {
+      "sha256": "5ea74721414db1af6cb3cc7fc93961cb5bbafb54868b41430b7c3a6a94890683",
+      "bytes": 5162,
+      "lines": 198,
+      "symbol_declarations": 50,
+      "kinds": {
+        "constant": 3,
+        "forward": 3,
+        "native": 29,
+        "stock": 15
+      },
+      "dependencies": [
+        "tsx",
+        "tsconst"
+      ],
+      "module_pragmas": [
+        "tsfun"
+      ]
+    },
+    "tsstats.inc": {
+      "sha256": "b20ffef371ae2d786494af09373fe73f92304ac350f9b03684f8955ff27fcf31",
+      "bytes": 2624,
+      "lines": 65,
+      "symbol_declarations": 11,
+      "kinds": {
+        "constant": 1,
+        "native": 10
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "tsx.inc": {
+      "sha256": "ad2d0553f21c56c885ed377c6655f3a39667787ec792b5bb88d75183b4b1cad8",
+      "bytes": 2563,
+      "lines": 88,
+      "symbol_declarations": 16,
+      "kinds": {
+        "constant": 3,
+        "forward": 2,
+        "native": 10,
+        "stock": 1
+      },
+      "dependencies": [
+        "tsstats"
+      ],
+      "module_pragmas": []
+    },
+    "vault.inc": {
+      "sha256": "8e8d383e3cd34c6c80084d73545a2fb6bce708668ae8a7740fb5a7466ae05eac",
+      "bytes": 1547,
+      "lines": 60,
+      "symbol_declarations": 5,
+      "kinds": {
+        "constant": 1,
+        "native": 4
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "vector.inc": {
+      "sha256": "3c47a0e251cf80dbece2fa4a4a857fbc1d73c4c57df92aa703d6f911caffcec9",
+      "bytes": 3289,
+      "lines": 131,
+      "symbol_declarations": 13,
+      "kinds": {
+        "constant": 4,
+        "native": 7,
+        "stock": 2
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    },
+    "xs.inc": {
+      "sha256": "e401a3b4e5d717afb928f1cfade7c6bb184b156dcce8c930e18510518ea5f9c4",
+      "bytes": 39513,
+      "lines": 1570,
+      "symbol_declarations": 145,
+      "kinds": {
+        "constant": 35,
+        "enum": 2,
+        "macro": 13,
+        "stock": 83,
+        "stock-variable": 12
+      },
+      "dependencies": [],
+      "module_pragmas": []
+    }
+  }
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "ReHLDS Engine APIs"
+  short_description: "Engine hooks, typed state and modern message APIs"
+  default_prompt: "Use $cs16-rehlds-engine to implement this engine feature against the actual ReHLDS/ReAPI contract."
+policy:
+  allow_implicit_invocation: true

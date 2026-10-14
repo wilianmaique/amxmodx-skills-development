@@ -1,0 +1,6 @@
+interface:
+  display_name: "ReAPI CS Gameplay"
+  short_description: "Players, weapons, teams, rounds and typed game members"
+  default_prompt: "Use $cs16-reapi-gameplay to implement this CS 1.6 feature with supported semantic ReGameDLL APIs."
+policy:
+  allow_implicit_invocation: true

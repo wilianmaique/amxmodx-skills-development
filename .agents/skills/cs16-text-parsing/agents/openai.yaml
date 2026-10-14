@@ -1,0 +1,6 @@
+interface:
+  display_name: "AMXX Text and Parsing"
+  short_description: "Strings, regex, JSON, INI and SMC with exact contracts"
+  default_prompt: "Use $cs16-text-parsing to parse or transform this data with the target APIs and complete resource cleanup."
+policy:
+  allow_implicit_invocation: true

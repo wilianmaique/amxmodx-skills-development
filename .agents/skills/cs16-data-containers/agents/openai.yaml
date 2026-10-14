@@ -1,0 +1,6 @@
+interface:
+  display_name: "AMXX Data Containers"
+  short_description: "Arrays, tries, stacks, datapacks and correct sorting"
+  default_prompt: "Use $cs16-data-containers to choose and implement the appropriate container with correct mutation and ownership rules."
+policy:
+  allow_implicit_invocation: true

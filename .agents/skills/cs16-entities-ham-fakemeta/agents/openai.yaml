@@ -1,0 +1,6 @@
+interface:
+  display_name: "GoldSrc Entities and Hooks"
+  short_description: "Entity, Ham and Fakemeta work with deliberate fallbacks"
+  default_prompt: "Use $cs16-entities-ham-fakemeta to implement this entity operation with the appropriate supported hook family."
+policy:
+  allow_implicit_invocation: true

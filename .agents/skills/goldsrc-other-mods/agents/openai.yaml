@@ -1,0 +1,6 @@
+interface:
+  display_name: "Other GoldSrc Mod APIs"
+  short_description: "DoD, TFC, TS, NS and EvolutionXCore API boundaries"
+  default_prompt: "Use $goldsrc-other-mods to resolve the requested game's API and prevent cross-mod identifier mistakes."
+policy:
+  allow_implicit_invocation: true

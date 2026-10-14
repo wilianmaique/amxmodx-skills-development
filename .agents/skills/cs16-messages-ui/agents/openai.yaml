@@ -1,0 +1,6 @@
+interface:
+  display_name: "CS Messages and UI"
+  short_description: "Wire-correct messages, menus, HUD and translations"
+  default_prompt: "Use $cs16-messages-ui to build this presentation feature with correct recipients, schemas and menu ownership."
+policy:
+  allow_implicit_invocation: true

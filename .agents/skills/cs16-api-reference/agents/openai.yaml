@@ -1,0 +1,6 @@
+interface:
+  display_name: "CS 1.6 API Reference"
+  short_description: "Resolve exact include contracts and route API work"
+  default_prompt: "Use $cs16-api-reference to verify this project's exact API contracts and select the relevant skills."
+policy:
+  allow_implicit_invocation: true
