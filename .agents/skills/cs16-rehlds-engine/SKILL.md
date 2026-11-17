@@ -26,9 +26,22 @@ Read [message protocol](references/message-protocol.md) before changing a messag
 
 The [message observer example](assets/message-observer.sma) reads a checked `ArgString` through the modern protocol in post, retaining the matching `MessageHook:` handle.
 
+## Sound emission
+
+Prefer ReAPI's `rh_emit_sound2` over AMXX's `emit_sound` when the target server supports ReHLDS and the native is available. Use `emit_sound` when stock HLDS compatibility is required. Precache the sample with `precache_sound` and preserve channel, volume, attenuation, sound flags and pitch when migrating. Check the [recipient, origin and emission flag contract](references/engine-contexts.md#sound-emission) before choosing the added arguments.
+
+With a valid emitting `entity` and the sample precached in `plugin_precache`, insert recipient `0` after the entity for untargeted emission.
+
+```pawn
+// Before:
+// emit_sound(entity, CHAN_ITEM, "items/tr_kevlar.wav", VOL_NORM, ATTN_NORM, 0, PITCH_NORM);
+
+rh_emit_sound2(entity, 0, CHAN_ITEM, "items/tr_kevlar.wav", VOL_NORM, ATTN_NORM, 0, PITCH_NORM);
+```
+
 ## Other engine features
 
-Inspect `rh_emit_sound2` for recipient, emission flags and origin semantics. Precache required sound resources; preserve the documented channel/volume/attenuation/pitch behavior. Use `rh_is_entity_fullpacked` only as the documented per-host packing query, not as a universal entity-validity or line-of-sight test.
+Use `rh_is_entity_fullpacked` for the documented per-host packing query. Choose separate APIs for line-of-sight and entity validation.
 
 Map-name, pause, drop-client, realtime, visibility, bone/attachment, bodygroup and sequence helpers have individual contracts. `rh_set_mapname` is not an implicit map load. `rh_get_realtime` is a different time domain from game time; choose deliberately.
 

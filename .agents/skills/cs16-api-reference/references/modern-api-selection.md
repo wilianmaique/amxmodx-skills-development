@@ -16,6 +16,7 @@ The target include set and server capabilities decide availability. These prefer
 | Emulate a supported game operation with `fm_*`, `give_item`, direct member writes or manually sent HUD messages | Matching `rg_*` operation | Include handling, grants versus replacements, money tracking, HUD/model/team synchronization and win checks |
 | Manual spawn/team/weapon polling | Matching semantic hooks; Ham/Fakemeta only where needed | ReAPI coverage, bot behavior, pre/post phase and recursion |
 | AMXX `register_message` where richer original-data/post interception is needed | ReHLDS `RegisterMessage` when this version/runtime exposes it | AMXX uses `PLUGIN_*`; ReAPI message callbacks use `HC_*`; do not mix their data natives |
+| AMXX `emit_sound` | ReAPI `rh_emit_sound2` on ReHLDS | Preserve the emitter and intended audience. Check [recipient, origin and emission flags](../../cs16-rehlds-engine/references/engine-contexts.md#sound-emission) |
 | `strbreak` | `argparse` or `argbreak` | Quoted arguments, cursor progress and truncation |
 | `replace_all` | `replace_string` | Case matching, maximum buffer size and in-place behavior |
 | `format` with independent input/output | `formatex` | Keep `format` when the destination is also a formatting input |

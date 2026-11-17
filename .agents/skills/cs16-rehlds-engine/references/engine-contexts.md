@@ -8,6 +8,12 @@ Entity variables are per-edict engine state. ReGameDLL members are private game 
 
 For connection hooks, distinguish a client not yet put in server from an active player. A valid network object does not imply that player private data is initialized. Use the callback's documented rejection/drop path and preserve a useful reason where the task changes admission behavior.
 
-Sound/resource operations require precached assets and appropriate engine context. `rh_emit_sound2` can target recipients and provides custom emission/origin flags; inspect those rather than assuming it is a direct replacement for every `emit_sound` call. Do not equate an entity being fullpacked for one host/frame with current visibility, valid private data or transmission to every player.
+An entity being fullpacked for one host and frame describes packing for that host. Check visibility, private-data validity or delivery to other players through the APIs for those operations.
 
 `rh_get_realtime` measures engine realtime. `get_gametime` follows gameplay/map time. Do not combine deadlines from those clocks unless conversion is explicit. Pause-sensitive features need a chosen clock rather than an arbitrary preference for the newer function.
+
+## Sound emission
+
+`rh_emit_sound2` takes `recipient` immediately after `entity`. Pass `0` as the recipient for untargeted emission or a client index to target one listener. `entity = 0` selects worldspawn and allows an explicit `origin`. Check the existing emitter and audience when migrating calls that pass `0` to `emit_sound`.
+
+The `emitFlags` argument takes `SND_EMIT2_*` constants. Use `SND_EMIT2_NOPAS` only when the sound should bypass potentially audible set (PAS) filtering. Check the return value when subsequent behavior depends on successful emission.
