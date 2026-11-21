@@ -34,6 +34,11 @@ Newer names alone do not establish equivalence. Check timing, original-call beha
 - Entity indices and client slots are reusable. For tasks, SQL, cvar queries or other delayed callbacks, retain and verify session identity (for example userid plus a generation) before applying results to a player. Authorization and put-in-server can arrive in either order.
 - Distinguish owned handles from borrowed callback handles. Destroy owned arrays, tries, snapshots, iterators, stacks, datapacks, JSON, regex, parsers, files, SQL and traces with their matching API. A threaded SQL query handle is callback-owned and must not be freed by the plugin.
 - Hook arguments, original returns, trace pointers, userinfo buffers and movement contexts are valid only in the context documented for that callback. Copy required data rather than retaining a borrowed pointer for deferred work.
+
+## Performance
+
+When creating, modifying, or reviewing an AMXX plugin, consider how often the affected code runs and how its cost scales with players or entities. Prefer the simplest implementation that avoids unnecessary repeated work while preserving the intended behavior and server compatibility. If an optimization adds complexity and its benefit is uncertain, measure before adopting it.
+
 - Keep gameplay hooks inexpensive. Cache cvar handles or bind values, cache message IDs, use event callbacks for discrete events, and perform disk/SQL/network work away from per-frame hooks. A task still runs on the game thread; moving blocking I/O into a task does not make it asynchronous.
 
 ## Validation
